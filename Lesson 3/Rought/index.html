@@ -1,28 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scrissors</title>
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-   <header>
-<h1>Rock Paper Scrissor</h1>
-   </header>
+  <div class="game-container">
+    <h1>Rock Paper Scissors</h1>
+    <div class="choices">
+      <button onclick="play('rock')">✊ Rock</button>
+      <button onclick="play('paper')">✋ Paper</button>
+      <button onclick="play('scissors')">✌️ Scissors</button>
+    </div>
+    <div class="results">
+      <p id="user-choice">You chose: -</p>
+      <p id="computer-choice">Computer chose: -</p>
+      <h2 id="result">Result: -</h2>
+    </div>
+  </div>
 
-   <div class="score-board">
-<div id="user-lable" class="badge">user</div>
-<div id="comp-lable" class="badge">comp</div>
-<span id="user-score">0</span>:<span id="comp-score">0</span>
-</div>
-
-<div class="result">
-<p>Paper convers Rock. You win!  </p>
-</div>
-<div class="choices">
-<div class="choice">
-<img src="Images/Rock.png" alt="">
-</div>
+  <script src="script.js"></script>
 </body>
 </html>
