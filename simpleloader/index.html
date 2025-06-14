@@ -20,51 +20,16 @@
     border-top: 6px solid red;
     border-bottom: 6px solid red;
     border-radius: 50%;
-    animation: spin 1s linear infinite, colorshift 4s linear infinite;
+    animation: spin 1s linear infinite;
 }
 
         
         @keyframes spin {
          to{transform: rotate(360deg);}   
         }
-        @keyframes colorshift{
-        0%{
-            border-top-color: red;
-            border-bottom-color: red;
-             background: conic-gradient(red 25%, transparent 0 75%, red 0);
-             box-shadow: 0 0 20px;
-            color: red;
-        }
-        25%{
-            border-top-color: cyan;
-            border-bottom-color: cyan;
-            background: conic-gradient(cyan 25%, transparent 0 75%, cyan 0);
-            box-shadow: 0 0 20px;
-            color: cyan;
-        }
-        50%{
-          border-top-color: green;
-          background: conic-gradient(green 25%, transparent 0 75%, green 0);
-          box-shadow: 0 0 20px;
-          border-bottom-color:green;
-          color: green;  
-        }
-        75%{
-            border-top-color: yellow;
-            background: conic-gradient(yellow 25%, transparent 0 75%, yellow 0);
-            box-shadow: 0 0 20px;
-            border-bottom-color: yellow;
-            color: yellow;
-        }
-        100%{
-            border-top-color:red;
-            background: conic-gradient(red 25%, transparent 0 75%, red 0);
-            box-shadow: 0 0 20px;
-            border-bottom-color: red;
-            color: red;
-
-        }
-    }
+        
+       
+    
     </style>
     </head>
     <body>
